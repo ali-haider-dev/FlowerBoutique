@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+
+.body{
+    background-color: #dcdcdc;
+}
+#logo {
+    height: 5em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    white-space: nowrap;
+    
+  }
+  #header{
+    background-color: #dcdcdc;
+  
+  }
+  .links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 20%;
+    background-color: grey;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+  }
+  ul li a{
+    text-decoration: none;
+    color: white;
+  }
+  li {
+    display: inline;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    float: left;
+  }
+  
+  a {
+    display: block;
+    padding: 8px;
+    color: white;
+  }
+  
+  li a:hover {
+    background-color: #555;
+    color: white;
+    border: 2px;
+    border-color: black;
+    border-style: solid;
+    padding: auto;
+    margin: auto;
+  }
+#img {
+    width: 40vw;
+    height: 95vh;
+}
+#detail p{
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    color: #7c7c7c;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 3rem;
+}
+#detail h1{
+    font-family: Baskervville;
+    width: max-content;
+}
+#detail h2{
+    font-weight: 700;
+    color: #099099;
+    font-family: Baskervville,sans-serif;
+    margin-top: 0;
+    
+    margin-left: 3rem;
+}
+
+#detail p span{
+    font-weight: 500;
+}

@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #dcdcdc;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+#logo {
+  height: 5em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  white-space: nowrap;
+  
+}
+#header{
+  background-color: #dcdcdc;
+
+}
+.links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  top: 20%;
+  background-color: grey;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+li {
+  display: inline;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  color: white;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  background-color: #555;
+  color: white;
+  border: 2px;
+  border-color: black;
+  border-style: solid;
+  padding: auto;
+  margin: auto;
+}
+
+.Container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #dcdcdc;
+}
+
+.Container .box {
+  position: relative;
+  cursor: pointer;
+  width: 30rem;
+  height: 30rem;
+  margin: 4rem;
+}
+
+.Container .box:hover .imgBox {
+  transform: translate(-3.5rem, -3.5rem);
+}
+
+.Container .box:hover .content {
+  transform: translate(3.5rem, 3.5rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  resize: both;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  z-index: 1;
+  align-items: flex-end;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.content h2 {
+  display: block;
+  font-size: 2rem;
+  color: #111;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.content span {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .Container .box:hover .content {
+    transform: translate(0, 3.5rem);
+  }
+  .Container .box:hover .imgBox {
+    transform: translate(0, -3.5rem);
+  }
+}
